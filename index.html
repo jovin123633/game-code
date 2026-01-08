@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Casino AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎰 DICE CASINO AI 🎰</h1>
+
+    <div class="stats">
+        <div>Balance: ₱<span id="balance">0</span></div>
+        <div>Debt: ₱<span id="debt">0</span></div>
+        <div>Jackpot: ₱<span id="jackpot">0</span></div>
+    </div>
+
+    <input type="number" id="betAmount" placeholder="Bet amount">
+
+    <select id="chosenNumber">
+        <option value="">Pick a number (1–6)</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+
+    <div class="dice" id="dice">?</div>
+
+    <button id="rollBtn">ROLL</button>
+    <button id="doubleBtn">DOUBLE OR NOTHING</button>
+    <button id="loanBtn">GET CREDIT</button>
+    <button id="payBtn">PAY DEBT</button>
+
+    <div class="dealer" id="dealer">🤵 Dealer: Welcome to the table.</div>
+    <div class="result" id="result"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

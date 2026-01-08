@@ -1,0 +1,82 @@
+body {
+    background: radial-gradient(circle, #000, #111);
+    color: gold;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 360px;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+.stats div {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.dice {
+    width: 120px;
+    height: 120px;
+    background: white;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px gold;
+}
+
+.rolling {
+    animation: shake 0.15s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0); }
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, gold, orange);
+}
+
+.dealer {
+    margin-top: 15px;
+    font-style: italic;
+    color: #ffcc66;
+}
+
+.result {
+    margin-top: 10px;
+    font-size: 18px;
+}
